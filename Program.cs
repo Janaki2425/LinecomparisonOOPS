@@ -3,7 +3,7 @@ namespace LineComparsionUC
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Linecomparison()
         {
             int x1, y1, x2, y2, length;
             Console.WriteLine("Enter x coordinate of first point:");
@@ -21,7 +21,7 @@ namespace LineComparsionUC
 
             Console.WriteLine("The length of the straight line joining the two points is:" + Math.Sqrt(length));
             Console.WriteLine("Equality of two points is:" + x.Equals(y));
-             
+
             int value = x.CompareTo(y);
 
             if (value > 0)
@@ -31,9 +31,12 @@ namespace LineComparsionUC
             else
                 Console.WriteLine("{0} is equal to {1}", x, y);
         }
+        public static void Main(string[] args)
+        {
+            Linecomparison();
+        }
     }
-    
 }
 
-    
+
 
